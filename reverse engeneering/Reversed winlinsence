@@ -1,0 +1,9 @@
+Very excited rn, was able to reverse a program (not gonna give name so its not gonna be abused) the program is obfuscated by them/winlicense 3, i tried the unlicense method
+and was able to get some results so that the strings are not encryted, but the main problem i had with this is that the program is using 2 steps of verification. 
+The program will sent something like this www.asdf.com\download\license\info=jljlkj then the server will return a file which is encryted back, the client after reciving
+the key will not check the valitity of said file and just precode to sent the second request downloading the actual program a dll file (doesnt change througout the requests
+i think this is so that the client doesnt have to be updated but still saved it so that when my key runs out the server doesnt refuse to give me the key).
+The problem : the program doesnt have any code writed for parsing the given key, but gives it to the dll which uses winlicense to parse it, i wasnt have to unpack the dll 
+as the dll need to be started by the main problem, so instead i tried to see what local files (no connection to any winlincese backbone so i
+assumed that its local) that winlicense makes so that the same key couldnt be used twice(net debuggers FTW)
+and im not gonna go through what files winlicense uses so but theres alot of them. gonna make a python program to clean the local files but yeah, its 3am bye
